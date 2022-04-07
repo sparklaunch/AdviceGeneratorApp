@@ -22,7 +22,7 @@ struct AdviceText: View {
 
 struct AdviceText_Previews: PreviewProvider {
     static var previews: some View {
-        AdviceText(text: Constants.General.advicePlaceholder)
+        AdviceText(text: Constants.General.slipPlaceholder.slip.advice)
             .background(Color("CardColor"))
             .previewLayout(.sizeThatFits)
     }

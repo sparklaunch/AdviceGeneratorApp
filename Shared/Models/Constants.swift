@@ -10,8 +10,7 @@ import Foundation
 enum Constants {
     enum General {
         public static let shadowRadius: Double = 10
-        public static let adviceNumberPlaceholder: String = "ADVICE #117"
-        public static let advicePlaceholder: String = "It is easy to sit up and take notice, what's difficult is getting up and taking action."
+        public static let slipPlaceholder: Slip = Slip(slip: SlipItem(id: 117, advice: "It is easy to sit up and take notice, what's difficult is getting up and taking action."))
     }
     enum Advice {
         public static let adviceNumberKerning: Double = 3

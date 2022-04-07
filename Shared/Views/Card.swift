@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct Card: View {
+    @StateObject private var network: Network = Network()
     var body: some View {
         VStack(spacing: Constants.Card.vStackSpacing) {
-            AdviceNumber(text: Constants.General.adviceNumberPlaceholder)
-            AdviceText(text: Constants.General.advicePlaceholder)
+            AdviceNumber(id: network.slip?.slip.id ?? Constants.General.slipPlaceholder.slip.id)
+            AdviceText(text: network.slip?.slip.advice ?? Constants.General.slipPlaceholder.slip.advice)
             Pattern()
             Spacer()
                 .frame(height: Constants.Card.spacingHeight)
@@ -24,7 +25,7 @@ struct Card: View {
         .overlay(
             GeometryReader { geometry in
                 Button {
-
+                    network.fetchSlip()
                 } label: {
                     Dice()
                 }
@@ -33,6 +34,9 @@ struct Card: View {
         )
         .shadow(radius: Constants.General.shadowRadius)
         .padding()
+        .onAppear {
+            network.fetchSlip()
+        }
     }
 }
 

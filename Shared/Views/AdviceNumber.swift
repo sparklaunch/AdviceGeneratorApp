@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct AdviceNumber: View {
-    let text: String
+    let id: Int
     var body: some View {
-        Text(text)
+        Text("ADVICE #\(id)")
             .kerning(Constants.Advice.adviceNumberKerning)
             .font(.footnote)
             .fontWeight(.bold)
@@ -20,7 +20,7 @@ struct AdviceNumber: View {
 
 struct AdviceNumber_Previews: PreviewProvider {
     static var previews: some View {
-        AdviceNumber(text: Constants.General.adviceNumberPlaceholder)
+        AdviceNumber(id: Constants.General.slipPlaceholder.slip.id)
             .background(Color("CardColor"))
             .previewLayout(.sizeThatFits)
     }

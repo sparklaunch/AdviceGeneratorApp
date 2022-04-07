@@ -8,8 +8,10 @@
 import Foundation
 
 struct Slip: Decodable {
-    struct slip: Decodable {
-        var id: Int
-        var advice: String
-    }
+    let slip: SlipItem
+}
+
+struct SlipItem: Identifiable, Decodable {
+    let id: Int
+    let advice: String
 }

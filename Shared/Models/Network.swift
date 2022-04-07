@@ -8,8 +8,8 @@
 import SwiftUI
 
 class Network: ObservableObject {
-    @Published private var slips: [Slip] = [Slip]()
-    func fetchSlips() -> Void {
+    @Published var slip: Slip?
+    func fetchSlip() -> Void {
         guard let url: URL = URL(string: "https://api.adviceslip.com/advice")
         else {
             fatalError("Failed to connect to the server.")
@@ -33,8 +33,9 @@ class Network: ObservableObject {
             }
             do {
                 let decoder: JSONDecoder = JSONDecoder()
-                let decodedSlips: [Slip] = try decoder.decode([Slip].self, from: data)
-                self.slips = decodedSlips
+                let decodedSlip: Slip = try decoder.decode(Slip.self, from: data)
+                print(decodedSlip)
+                self.slip = decodedSlip
             }
             catch let error {
                 fatalError(error.localizedDescription)
