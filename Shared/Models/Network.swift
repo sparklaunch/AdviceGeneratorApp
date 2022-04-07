@@ -34,7 +34,6 @@ class Network: ObservableObject {
             do {
                 let decoder: JSONDecoder = JSONDecoder()
                 let decodedSlip: Slip = try decoder.decode(Slip.self, from: data)
-                print(decodedSlip)
                 self.slip = decodedSlip
             }
             catch let error {
