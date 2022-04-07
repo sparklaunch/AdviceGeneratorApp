@@ -16,26 +16,30 @@ struct Card: View {
             Spacer()
                 .frame(height: 30)
         }
-        .padding()
+        .padding(32)
         .background(
             Color("CardColor")
         )
         .cornerRadius(15)
         .overlay(
-            Button {
+            GeometryReader { geometry in
+                Button {
 
-            } label: {
-                Dice()
+                } label: {
+                    Dice()
+                }
+                .offset(x: geometry.size.width / 2 - 40, y: geometry.size.height - 40)
             }
-                .offset(y: 130)
         )
         .shadow(radius: 10)
+        .padding()
     }
 }
 
 struct Card_Previews: PreviewProvider {
     static var previews: some View {
         Card()
+            .background(Color("BackgroundColor"))
             .previewLayout(.sizeThatFits)
     }
 }
