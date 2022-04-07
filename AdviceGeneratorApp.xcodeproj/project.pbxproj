@@ -15,6 +15,8 @@
 		907CCA0A27FE99B10058600D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907CC9F727FE99B10058600D /* Assets.xcassets */; };
 		907CCA1727FE9B860058600D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA1627FE9B860058600D /* Card.swift */; };
 		907CCA1927FE9BD00058600D /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA1827FE9BD00058600D /* Background.swift */; };
+		907CCA1B27FE9C4E0058600D /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA1A27FE9C4E0058600D /* Advice.swift */; };
+		907CCA1D27FE9C890058600D /* AdviceNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA1C27FE9C890058600D /* AdviceNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		907CCA0427FE99B10058600D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		907CCA1627FE9B860058600D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		907CCA1827FE9BD00058600D /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		907CCA1A27FE9C4E0058600D /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
+		907CCA1C27FE9C890058600D /* AdviceNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				907CC9F627FE99B00058600D /* ContentView.swift */,
 				907CCA1627FE9B860058600D /* Card.swift */,
 				907CCA1827FE9BD00058600D /* Background.swift */,
+				907CCA1C27FE9C890058600D /* AdviceNumber.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 		907CCA1427FE99D50058600D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				907CCA1A27FE9C4E0058600D /* Advice.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +214,8 @@
 			files = (
 				907CCA0727FE99B10058600D /* ContentView.swift in Sources */,
 				907CCA1727FE9B860058600D /* Card.swift in Sources */,
+				907CCA1D27FE9C890058600D /* AdviceNumber.swift in Sources */,
+				907CCA1B27FE9C4E0058600D /* Advice.swift in Sources */,
 				907CCA0527FE99B10058600D /* AdviceGeneratorAppApp.swift in Sources */,
 				907CCA1927FE9BD00058600D /* Background.swift in Sources */,
 			);
