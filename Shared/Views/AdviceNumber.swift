@@ -20,7 +20,7 @@ struct AdviceNumber: View {
 
 struct AdviceNumber_Previews: PreviewProvider {
     static var previews: some View {
-        AdviceNumber(text: "ADVICE #117")
+        AdviceNumber(text: Constants.General.adviceNumberPlaceholder)
             .background(Color("CardColor"))
             .previewLayout(.sizeThatFits)
     }

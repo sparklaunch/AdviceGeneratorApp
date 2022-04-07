@@ -10,6 +10,8 @@ import Foundation
 enum Constants {
     enum General {
         public static let shadowRadius: Double = 10
+        public static let adviceNumberPlaceholder: String = "ADVICE #117"
+        public static let advicePlaceholder: String = "It is easy to sit up and take notice, what's difficult is getting up and taking action."
     }
     enum Advice {
         public static let adviceNumberKerning: Double = 3
@@ -24,5 +26,6 @@ enum Constants {
     enum Dice {
         public static let diceWidth: Double = 32
         public static let dicePadding: Double = 24
+        public static let diceOffset: Double = 40
     }
 }

@@ -22,7 +22,7 @@ struct AdviceText: View {
 
 struct AdviceText_Previews: PreviewProvider {
     static var previews: some View {
-        AdviceText(text: "It is easy to sit up and take notice, what's difficult is getting up and taking action.")
+        AdviceText(text: Constants.General.advicePlaceholder)
             .background(Color("CardColor"))
             .previewLayout(.sizeThatFits)
     }

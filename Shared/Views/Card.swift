@@ -10,8 +10,8 @@ import SwiftUI
 struct Card: View {
     var body: some View {
         VStack(spacing: Constants.Card.vStackSpacing) {
-            AdviceNumber(text: "ADVICE #117")
-            AdviceText(text: "It is easy to sit up and take notice, what's difficult is getting up and taking action.")
+            AdviceNumber(text: Constants.General.adviceNumberPlaceholder)
+            AdviceText(text: Constants.General.advicePlaceholder)
             Pattern()
             Spacer()
                 .frame(height: Constants.Card.spacingHeight)
@@ -28,7 +28,7 @@ struct Card: View {
                 } label: {
                     Dice()
                 }
-                .offset(x: geometry.size.width / 2 - 40, y: geometry.size.height - 40)
+                .offset(x: geometry.size.width / 2 - Constants.Dice.diceOffset, y: geometry.size.height - Constants.Dice.diceOffset)
             }
         )
         .shadow(radius: Constants.General.shadowRadius)
