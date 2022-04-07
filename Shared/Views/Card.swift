@@ -12,10 +12,13 @@ struct Card: View {
         VStack(spacing: 16) {
             AdviceNumber(text: "ADVICE #117")
             AdviceText(text: "It is easy to sit up and take notice, what's difficult is getting up and taking action.")
+            Pattern()
         }
+        .padding()
         .background(
             Color("CardColor")
         )
+        .cornerRadius(15)
     }
 }
 

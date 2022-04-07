@@ -16,6 +16,7 @@ struct AdviceText: View {
             .foregroundColor(Color("BodyColor"))
             .multilineTextAlignment(.center)
             .lineSpacing(3)
+            .fixedSize(horizontal: false, vertical: true)
     }
 }
 
