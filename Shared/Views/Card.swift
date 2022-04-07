@@ -9,16 +9,27 @@ import SwiftUI
 
 struct Card: View {
     var body: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: 24) {
             AdviceNumber(text: "ADVICE #117")
             AdviceText(text: "It is easy to sit up and take notice, what's difficult is getting up and taking action.")
             Pattern()
+            Spacer()
+                .frame(height: 30)
         }
         .padding()
         .background(
             Color("CardColor")
         )
         .cornerRadius(15)
+        .overlay(
+            Button {
+
+            } label: {
+                Dice()
+            }
+                .offset(y: 130)
+        )
+        .shadow(radius: 10)
     }
 }
 
