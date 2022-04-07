@@ -12,7 +12,7 @@ struct AdviceNumber: View {
     var body: some View {
         Text(text)
             .kerning(3)
-            .font(.caption)
+            .font(.footnote)
             .fontWeight(.bold)
             .foregroundColor(Color("AccentColor"))
     }

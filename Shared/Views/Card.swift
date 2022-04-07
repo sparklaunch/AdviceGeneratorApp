@@ -9,8 +9,9 @@ import SwiftUI
 
 struct Card: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 16) {
             AdviceNumber(text: "ADVICE #117")
+            AdviceText(text: "It is easy to sit up and take notice, what's difficult is getting up and taking action.")
         }
         .background(
             Color("CardColor")
