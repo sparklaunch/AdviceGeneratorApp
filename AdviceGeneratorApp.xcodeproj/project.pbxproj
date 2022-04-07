@@ -13,6 +13,8 @@
 		907CCA0827FE99B10058600D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CC9F627FE99B00058600D /* ContentView.swift */; };
 		907CCA0927FE99B10058600D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907CC9F727FE99B10058600D /* Assets.xcassets */; };
 		907CCA0A27FE99B10058600D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907CC9F727FE99B10058600D /* Assets.xcassets */; };
+		907CCA1727FE9B860058600D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA1627FE9B860058600D /* Card.swift */; };
+		907CCA1927FE9BD00058600D /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA1827FE9BD00058600D /* Background.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		907CC9FC27FE99B10058600D /* AdviceGeneratorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdviceGeneratorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907CCA0227FE99B10058600D /* AdviceGeneratorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdviceGeneratorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907CCA0427FE99B10058600D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		907CCA1627FE9B860058600D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		907CCA1827FE9BD00058600D /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				907CC9F627FE99B00058600D /* ContentView.swift */,
+				907CCA1627FE9B860058600D /* Card.swift */,
+				907CCA1827FE9BD00058600D /* Background.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				907CCA0727FE99B10058600D /* ContentView.swift in Sources */,
+				907CCA1727FE9B860058600D /* Card.swift in Sources */,
 				907CCA0527FE99B10058600D /* AdviceGeneratorAppApp.swift in Sources */,
+				907CCA1927FE9BD00058600D /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
