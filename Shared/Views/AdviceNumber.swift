@@ -11,7 +11,7 @@ struct AdviceNumber: View {
     let text: String
     var body: some View {
         Text(text)
-            .kerning(3)
+            .kerning(Constants.Advice.adviceNumberKerning)
             .font(.footnote)
             .fontWeight(.bold)
             .foregroundColor(Color("AccentColor"))

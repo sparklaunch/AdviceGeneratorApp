@@ -11,11 +11,11 @@ struct Dice: View {
     var body: some View {
         Image("Dice")
             .resizable()
-            .frame(width: 32, height: 32)
-            .padding(24)
+            .frame(width: Constants.Dice.diceWidth, height: Constants.Dice.diceWidth)
+            .padding(Constants.Dice.dicePadding)
             .background(Color("AccentColor"))
             .clipShape(Circle())
-            .shadow(radius: 10)
+            .shadow(radius: Constants.General.shadowRadius)
     }
 }
 

@@ -15,7 +15,7 @@ struct AdviceText: View {
             .fontWeight(.bold)
             .foregroundColor(Color("BodyColor"))
             .multilineTextAlignment(.center)
-            .lineSpacing(3)
+            .lineSpacing(Constants.Advice.adviceLineSpacing)
             .fixedSize(horizontal: false, vertical: true)
     }
 }

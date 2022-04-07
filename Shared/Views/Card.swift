@@ -9,18 +9,18 @@ import SwiftUI
 
 struct Card: View {
     var body: some View {
-        VStack(spacing: 24) {
+        VStack(spacing: Constants.Card.vStackSpacing) {
             AdviceNumber(text: "ADVICE #117")
             AdviceText(text: "It is easy to sit up and take notice, what's difficult is getting up and taking action.")
             Pattern()
             Spacer()
-                .frame(height: 30)
+                .frame(height: Constants.Card.spacingHeight)
         }
-        .padding(32)
+        .padding(Constants.Card.cardPadding)
         .background(
             Color("CardColor")
         )
-        .cornerRadius(15)
+        .cornerRadius(Constants.Card.cardCornerRadius)
         .overlay(
             GeometryReader { geometry in
                 Button {
@@ -31,7 +31,7 @@ struct Card: View {
                 .offset(x: geometry.size.width / 2 - 40, y: geometry.size.height - 40)
             }
         )
-        .shadow(radius: 10)
+        .shadow(radius: Constants.General.shadowRadius)
         .padding()
     }
 }

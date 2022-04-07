@@ -20,6 +20,7 @@
 		907CCA1F27FE9D910058600D /* AdviceText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA1E27FE9D910058600D /* AdviceText.swift */; };
 		907CCA2127FE9EAD0058600D /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA2027FE9EAD0058600D /* Pattern.swift */; };
 		907CCA2327FE9F0C0058600D /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA2227FE9F0C0058600D /* Dice.swift */; };
+		907CCA2527FEA1900058600D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CCA2427FEA1900058600D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		907CCA1E27FE9D910058600D /* AdviceText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceText.swift; sourceTree = "<group>"; };
 		907CCA2027FE9EAD0058600D /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
 		907CCA2227FE9F0C0058600D /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		907CCA2427FEA1900058600D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				907CCA1A27FE9C4E0058600D /* Advice.swift */,
+				907CCA2427FEA1900058600D /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				907CCA1D27FE9C890058600D /* AdviceNumber.swift in Sources */,
 				907CCA1F27FE9D910058600D /* AdviceText.swift in Sources */,
 				907CCA2327FE9F0C0058600D /* Dice.swift in Sources */,
+				907CCA2527FEA1900058600D /* Constants.swift in Sources */,
 				907CCA1B27FE9C4E0058600D /* Advice.swift in Sources */,
 				907CCA0527FE99B10058600D /* AdviceGeneratorAppApp.swift in Sources */,
 				907CCA2127FE9EAD0058600D /* Pattern.swift in Sources */,
